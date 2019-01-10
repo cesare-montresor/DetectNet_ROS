@@ -18,6 +18,7 @@ find_package(catkin REQUIRED COMPONENTS
         )
 
 ## System dependencies are found with CMake's conventions
+find_package(jetson-utils REQUIRED)
 find_package(jetson-inference REQUIRED)
 find_package(CUDA REQUIRED)
 find_package(Qt4 REQUIRED)
@@ -161,6 +162,7 @@ target_link_libraries(${PROJECT_NAME}_node
   ${catkin_LIBRARIES}
   ${CUDA_LIBRARIES}
   ${OpenCV_LIBS}
+  jetson-utils
   jetson-inference
   nvcaffe_parser 
   nvinfer
