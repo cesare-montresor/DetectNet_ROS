@@ -15,10 +15,16 @@ In order to run it requires to compile and install jetson-inference on TX2 modul
     make
     sudo make install
 
+# Install (experimental)
+
+Starting from a clean jetson TX2 setup, this script will install all the required component:
+
+    sudo ./install.sh
+
 
   
 # Pre-requisite
-- Jetson TX2 with JetPack >3.2 (just use latest ) 
+- Jetson TX2 with JetPack >3.3 (just use latest ) 
 - TensorRT >3
 - CUDA 9.0
 - cuDNN >6.1
